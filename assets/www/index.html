@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=0">
+	<title>羽毛球入门宝典</title>
+	<script src="./lib/cordova-2.0.0.js"></script>
+	<link rel="stylesheet" href="./lib/jquery.mobile-1.4.0.min.css" />
+	<script src="./lib/jquery-1.9.1.min.js"></script>
+	<script src="./lib/jquery.mobile-1.4.0.min.js"></script>	
+</head>
+<body>
+	<div data-role="page" id="index">
+		<div data-role="header">
+			<h1>羽毛球入门宝典</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#level1" data-role="button">规则讲解</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#level2" data-role="button">技术要领</a>
+				</div>
+				<div class="ui-block-a">
+					<a href="#level3" data-role="button">视频资源</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#level4" data-role="button">相关链接</a>
+				</div>				
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#level1" data-role="button" data-icon="edit" data-iconpos="top">规则讲解</a></li>
+					<li><a href="#level2" data-role="button" data-icon="heart" data-iconpos="top">技术要领</a></li>
+					<li><a href="#index" data-role="button" data-icon="home" data-iconpos="top">首页</a></li>
+					<li><a href="#level3" data-role="button" data-icon="video" data-iconpos="top">视频资源</a></li>
+					<li><a href="#level4" data-role="button" data-icon="search" data-iconpos="top">相关链接</a></li>
+				</ul>
+			</nav>		
+		</div>
+	</div>
+	
+	<div data-role="page" id="level1">
+		<div data-role="header"><a href="#index" data-role="button" data-icon="back" data-iconpos="notext" data-transition="pop"/></a><h1>规则讲解</h1></div>
+		<div data-role="content">
+			<ul data-role="listview" data-theme="g">
+				<li><a href="#level1-1">场地规则</a></li>
+				<li><a href="#level1-2">发球规则</a></li>
+				<li><a href="#level1-3">得分规则</a></li>
+				<li><a href="#level1-4">双打规则</a></li>
+			</ul>			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#level1" data-role="button" data-icon="edit" data-iconpos="top">规则讲解</a></li>
+					<li><a href="#level2" data-role="button" data-icon="heart" data-iconpos="top">技术要领</a></li>
+					<li><a href="#index" data-role="button" data-icon="home" data-iconpos="top">首页</a></li>
+					<li><a href="#level3" data-role="button" data-icon="video" data-iconpos="top">视频资源</a></li>
+					<li><a href="#level4" data-role="button" data-icon="search" data-iconpos="top">相关链接</a></li>
+				</ul>
+			</nav>	
+		</div>
+	</div>		
+</body>
+</html>
