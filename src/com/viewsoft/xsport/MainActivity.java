@@ -2,7 +2,9 @@ package com.viewsoft.xsport;
 
 import org.apache.cordova.DroidGap;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 
 public class MainActivity extends DroidGap {
@@ -19,5 +21,17 @@ public class MainActivity extends DroidGap {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+	
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			promptExit(this);
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+	
+	public static void promptExit(final Context con) {  
+		System.exit(0);   
+	} 	
 
 }
