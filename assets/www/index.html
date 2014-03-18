@@ -19,7 +19,10 @@
 	<script src="./lib/jquery-1.10.2.min.js"></script>
 	<script src="./lib/jquery.mobile-1.4.2.min.js"></script>	
 	<style type="text/css">
-		.ui-page { -webkit-backface-visibility: hidden; }
+		.ui-page { -webkit-backface-visibility: hidden; }	
+		a:visited {
+			text-decoration:none;
+		}
 		#index {
 			background: url("./imgs/index.png");
 			background-repeat: no-repeat;
@@ -27,6 +30,12 @@
 		.ui-grid-a {
 			vertical-align: middle; 
 			padding-top: 30px;
+		}
+		.bn-content{
+			font-size: 16px;
+		}
+		.bn-content img {
+			max-width:320px;
 		}
 	</style>
 </head>
@@ -73,7 +82,7 @@
 				<li><a href="#level1-3">发球规则</a></li>
 				<li><a href="#level1-4">违例规则</a></li>
 				<li><a href="#level1-5">站位规则</a></li>				
-			</ul>			
+			</ul>	
 		</div>
 		<div data-role="footer" data-position="fixed">
 			<nav data-role="navbar">
@@ -89,15 +98,15 @@
 	</div>	
 	<div data-role="page" id="level1-1">
 		<div data-role="header"><a href="#level1" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>规则讲解</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		（1）国际羽联对21分制做了最后修订，并宣布新规则将从2006年2月1日起正式实施。<br>
 		（2）据介绍，新规则的最大变化是取消了发球得分制，另外规定每局获胜分统一定为21分。<br>	
-		 <center><img src="./imgs/qiuchangchicun.png"><br>
+		 <center><img src="./imgs/qiuchangchicun.png"></center><br>
 		</div>
 	</div>	
 	<div data-role="page" id="level1-2">
 		<div data-role="header"><a href="#level1" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>规则讲解</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		（1）采用21分制，即双方分数先达21分者胜，3局2胜。每局双方打到20平后，一方领先2分即算该局获胜；若双方打成29平后，一方领先1分，即算该局取胜。<br>
 		（2）新制度中每球得分，并且除特殊情况（比如地板湿了，球打坏了），球员不可再提出中断比赛的要求。但是，每局一方以11分领先时，比赛进行1分钟的技术暂停，让比赛双方进行擦汗、喝水等。<br>
 		（3）在第三局或只进行一局的比赛中，当一方分数首先到达11分时，双方交换场区。<br>
@@ -105,7 +114,7 @@
 	</div>	
 	<div data-role="page" id="level1-5">
 		<div data-role="header"><a href="#level1" data-role="button" data-icon="back" data-iconpos="notext"/></a><h1>规则讲解</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		 <b>单打</b><br>
 		（1）发球方球员得分为0或双数时，则双方球员站在右发球区发球或接球。<br>
 		（2）发球方球员得分为单数时，则双方球员站在左发球区发球或接球。<br>
@@ -137,7 +146,7 @@
 	</div>
 	<div data-role="page" id="level1-3">
 		<div data-role="header"><a href="#level1" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>规则讲解</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		 <b>合法发球</b><br>
 		（1）发球员和接发球员都必须站在斜对角线发球区内发球和接发球，脚不能触及发球区的界限；两脚必须都有一部分与地面接触，不得移动，直至将球发出。<br>
 		（2）发球员的球拍必须先击中球托，与此同时整个球必须低于发球员的腰部。<br>
@@ -160,7 +169,7 @@
 	</div>
 	<div data-role="page" id="level1-4">
 		<div data-role="header"><a href="#level1" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>规则讲解</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		 <b>出界违例</b><br>
 		（1）单打的边线，是在边界的里面一条。<br>
 		（2）双打的边线就是最外面一条。<br>
@@ -206,30 +215,30 @@
 	</div>	
 	<div data-role="page" id="level2-1">
 		<div data-role="header"><a href="#level2" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>技术要领</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		（1）力争在身体前上方击球，千万不要让球落至颈部以下高度，否则回击的球就没有攻击力。<br>
-		（2）握拍手尽可能保持放松，以便最大限度地发挥手腕的力量。
-		（3）在单打时，每次击球后应立即回到中心位置。在双打防守时则应回到与同伴平行的位置，而在双打进攻时则应与同伴保持前后的位置，在双打发球时，发一短球后应立即向前封网以防对手打短球回击。
-		（4）在单打时，除非扣球，千万不要把球打在对方的中场，尽可能打两角。
-		（5）在进行有力的正手或反手击球时，身体应向击球一侧转动以便站稳双脚。
-		（6）单打发球要尽量高而远，双打发球要短，球的飞行路线要贴近球网的上缘，发球要多变。
-		（7）在规则允许的范围内尽可能多用假动作迷惑对方，但事先不要流露自己的意图。
-		（8）打高远球时，要准确地判断球的飞行方向，球要尽可能打得高而且接近对方底线。
-		（9）吊网前球时，球的路线要短，并尽可能靠近球网，打对角。
-		（10）扣球的应尽可能远离对手或直接命中对方的握拍手或肩。
-		（11）当你一时不知所措或需要短暂的喘息机会，可打一高远球，然后回到本场中心位置。
-		（12）对于初学者来说，反手端线通常是其薄弱区域，应注意打其弱点。
-		（13）在前场回击高球时，应尽量采用扣球，扣球是重要的得分手段，但不要在底线处击出高而短的球，这通常是给对手杀球机会的。
-		（14）许多运动员有自己的特有打法，因此要善于判断球的落点，及时进入适宜的位置，但千万不要过早暴露自己的动向。
-		（15）在双打接发球时，要举起球拍迫使对方发低球，如果对方的发球过高，立即上前扑杀。
-		（16）如果你正在得分，不要改变打法，如果正在失利，则应立即调整文质彬彬的打法，如果你的连续进攻没有奏效，可打一高远球，然后寻找战机重新发起进攻。
-		（17）握拍时，应尽量靠近拍柄末端，优点是：借助惯性更有力的挥拍。
-		（18）发球时，左脚在前：接球时，右脚在前，这样更有利于前后场的移动。
+		（2）握拍手尽可能保持放松，以便最大限度地发挥手腕的力量。<br>
+		（3）在单打时，每次击球后应立即回到中心位置。在双打防守时则应回到与同伴平行的位置，而在双打进攻时则应与同伴保持前后的位置，在双打发球时，发一短球后应立即向前封网以防对手打短球回击。<br>
+		（4）在单打时，除非扣球，千万不要把球打在对方的中场，尽可能打两角。<br>
+		（5）在进行有力的正手或反手击球时，身体应向击球一侧转动以便站稳双脚。<br>
+		（6）单打发球要尽量高而远，双打发球要短，球的飞行路线要贴近球网的上缘，发球要多变。<br>
+		（7）在规则允许的范围内尽可能多用假动作迷惑对方，但事先不要流露自己的意图。<br>
+		（8）打高远球时，要准确地判断球的飞行方向，球要尽可能打得高而且接近对方底线。<br>
+		（9）吊网前球时，球的路线要短，并尽可能靠近球网，打对角。<br>
+		（10）扣球的应尽可能远离对手或直接命中对方的握拍手或肩。<br>
+		（11）当你一时不知所措或需要短暂的喘息机会，可打一高远球，然后回到本场中心位置。<br>
+		（12）对于初学者来说，反手端线通常是其薄弱区域，应注意打其弱点。<br>
+		（13）在前场回击高球时，应尽量采用扣球，扣球是重要的得分手段，但不要在底线处击出高而短的球，这通常是给对手杀球机会的。<br>
+		（14）许多运动员有自己的特有打法，因此要善于判断球的落点，及时进入适宜的位置，但千万不要过早暴露自己的动向。<br>
+		（15）在双打接发球时，要举起球拍迫使对方发低球，如果对方的发球过高，立即上前扑杀。<br>
+		（16）如果你正在得分，不要改变打法，如果正在失利，则应立即调整文质彬彬的打法，如果你的连续进攻没有奏效，可打一高远球，然后寻找战机重新发起进攻。<br>
+		（17）握拍时，应尽量靠近拍柄末端，优点是：借助惯性更有力的挥拍。<br>
+		（18）发球时，左脚在前：接球时，右脚在前，这样更有利于前后场的移动。<br>
 		</div>
 	</div>	
 	<div data-role="page" id="level2-2">
 		<div data-role="header"><a href="#level2" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>技术要领</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		<b>抄球</b><br>
     	（1）羽毛球落在地上时从上望往下看是个V字形状，你用球拍的一边靠上V字的一边，但不可碰到。否则球会滚动，要重新调整位置。<br>
     	（2）刚刚开始尝试的时候球拍的中心轴和地面的角度可以小一点，45度以下或更低，拍面和地面是90度。人一定要弯腰哦，电视里的运动员也都是弯腰的。准备动作做好了，下面是更关键的要领。（先讲正确的握拍方法。将手平放在拍弦上,然后下滑到拍柄根部抓握；或者把球拍平放在桌面上，闭上眼，将球拍拿起。）假设你是右手握拍的。这时右手让拍子旋转，就好像要把球抄起来。此时才是真正的关键。右手手腕继续让拍子旋转。因为刚刚的抄球动作让球有一个向左的运动。继续旋转球拍，让贴球着的拍面旋转到一个可以阻止球向左运动的角度。在做旋转球拍的动作的时候，只要球被你抄起来了，就要边旋转拍面阻止球向左运动，边把身体挺直了。<br><br>
@@ -241,7 +250,7 @@
 	</div>
 	<div data-role="page" id="level2-3">
 		<div data-role="header"><a href="#level2" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>技术要领</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
  		以右手握拍为例，如果你是左手那就相反，要领有以下：<br>
 		（1）准备杀球之前先侧身，左脚在前，两脚的脚尖着地，并且用快速的后退步伐后退，使击球点在你的右肩前上方。因为击球点靠后的话就只能打高球了。<br>
 		（2）杀球前身体后仰，基本成弓型，这样使你用上全身所有的力量。<br>
@@ -252,7 +261,7 @@
 	</div>	
 	<div data-role="page" id="level2-4">
 		<div data-role="header"><a href="#level2" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>技术要领</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		像林丹、陶菲克那样精彩的扣杀球，除了要具备绝对的技术和弹跳以外，还有一些必不可少的前提基础：<br>
 		（1）出众的胸肌。因为杀球特别是他们那样的跳杀球是要把全身有限的力量全部用在杀球的瞬间，使球的速度达到及至。作为女选手，起跳杀球很少，但是无论什么样的杀球，都要在杀球之前先要将身体后仰成弓形，然后身体的力量由腰到胸再到上肢最后作用到球上。胸作为中转站，胸肌就有着至关重要的作用，所以作为男选手，练好胸肌是最重要的前提。<br>
 		（2）熟练的杀球能力。在你具备了身体的外部前提后，平时从原地到后退的杀球（包括正手和头顶）必须熟之又熟，并且落点要到位。<br>
@@ -284,7 +293,7 @@
 	</div>	
 	<div data-role="page" id="level3-1">
 		<div data-role="header"><a href="#level3" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>装备指南</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		（1）选择全碳羽毛球拍，而且是不带拉了线的那种，坚决不到超市或普通商场购买金属或半金属的已经穿了线的两支装的那种。<br>
 		（2）适合自己的才是最好的。没有购拍和打球经验的新手，第一次选购时，可买便宜一些的、低价位的球拍，低价位球拍一般没有强烈的个性，新手、一般人群都能适应，贵价拍当然好，但往往个性很强，不是偏硬就是偏重，只有那种力量不成问题的高手才能驾驶、控制之。新手打了几年以后，再根据自己的打法特点和力量情况选购适合自己的高价位球拍。<br>
 		（3）新手、新拍第一次拉线建议在20-23磅之间，磅数太高的话，弹性小，新手打不到后场，而且拍线易断，两支拍子碰撞时，往往拉线磅数高的拍子易“牺牲”；磅数太低，则控球不准确，击球有“滞后、粘连”的感觉，不爽。<br>
@@ -293,7 +302,7 @@
 	</div>	
 	<div data-role="page" id="level3-2">
 		<div data-role="header"><a href="#level3" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>装备指南</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		（1）高质量羽毛球的羽毛都必须采用优质鹅毛。鹅毛的强度、韧性都特别适合羽毛球的要求，但是它的成本较高而且原料的供应数量有限，所以在一些要求不高的羽毛球厂家采用了鸭毛，单单是从外观很难区分鸭毛和鹅毛，而且工艺精良的鸭毛羽毛球的飞行性能也非常的好，由于两种毛片的毛梗结构不一样，其耐打性比鹅毛的羽毛球要差的很多，在正常的击球中就很容易折断，由于鸭毛的价格比鹅毛要低的多，采用鸭毛能有效的降低成本。<br>
 		（2）胶水的质量直接影响到羽毛球的牢固度、耐用度。生产羽毛球的胶水分为两大类：高级树脂胶水和化学胶水。高级树脂胶水在硬度、牢固度上都要优于化学胶水，但是它的成本比较高，一般用在高档羽毛球的生产上。<br>
 		（3）高档产品和低档产品的区别除外观以外主要的区别在于球的飞行性能，即羽毛球的稳定性、速度、受击打时的变形度、飞行时的旋转性，高档的羽毛球对毛片的要求很高，一个球上的16根毛片要求外形和品质都几乎一样，才能保证羽毛球的高标准要求，从而造成它的价格较高。<br>
@@ -303,7 +312,7 @@
 	</div>	
 	<div data-role="page" id="level3-3">
 		<div data-role="header"><a href="#level3" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>装备指南</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		（1）好的羽毛球鞋可以使你键步如飞，选择时注意鞋底最好采用牛筋底，这样韧性 会比较好，适合在室内运动。如在室外，可选择高级的橡皮合成鞋底，效果也不错。羽球鞋的鞋底大都由生胶或人工橡胶所合成，生胶的鞋底因抓地力强所以适合于木板场地，因此排球鞋都可当羽排两用鞋。但不同厂牌的鞋底又会因制作过程时，生胶掺杂粉的比例过多使鞋底较硬，并且打没多久鞋底没什么磨损就会非常滑，所以在购买时须谨慎以免花冤枉钱。<br>
 		（2）不论穿着的鞋子如何，最重要是要有个观念：就是在室内打球的鞋子最好在要打时才穿，一来可以避免鞋子弄脏，二来可避免鞋底沾满灰尘而变滑，如此便能延长鞋子的使用寿命。<br>
 		（3）高档的羽毛球鞋多数采用复合生胶材料，前后脚掌接触地面的部分采用生胶，增强鞋子的抓地性能。<br>
@@ -344,7 +353,7 @@
 	</div>
 	<div data-role="page" id="level4-2">
 		<div data-role="header"><a href="#level3" data-role="button" data-icon="back" data-iconpos="notext" /></a><h1>相关链接</h1></div>
-		<div data-role="content">
+		<div data-role="content" class="bn-content">
 		（1）汤姆斯杯<br>
 		即世界男子团体羽毛球锦标赛，1948年举行首届比赛，现为两年一届，在偶数年举行。比赛由三场单打，两场双打组成。历史上夺得汤姆斯杯冠军最多的国家是印度尼西亚队，共13次。<br>
 		（2）尤伯杯<br>
